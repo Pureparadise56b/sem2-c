@@ -1,0 +1,31 @@
+FILE *fopen(const char *filename, const char *mode); // Opens a file and returns a file pointer.
+
+int fclose(FILE *stream); // Closes an opened file.
+
+size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream); // Reads data from a file into an array.
+
+size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream); // Writes data from an array to a file.
+
+int fseek(FILE *stream, long int offset, int whence); // Moves the file pointer to a specific location.
+
+long int ftell(FILE *stream); // Returns the current position of the file pointer.
+
+void rewind(FILE *stream); // Moves the file pointer to the beginning of the file.
+
+int fflush(FILE *stream); // Flushes the output buffer to the file.
+
+int feof(FILE *stream); // Checks if the end of the file has been reached.
+
+int ferror(FILE *stream); // Checks for any errors in the file.
+
+int remove(const char *filename); // Deletes a file.
+
+int rename(const char *oldname, const char *newname); // Renames a file.
+
+int fgetc(FILE *stream); // Reads a character from the file.
+
+char *fgets(char *str, int n, FILE *stream); // Reads a string from the file.
+
+int fputc(int char, FILE *stream); // Writes a character to the file.
+
+int fputs(const char *str, FILE *stream); // Writes a string to the file.
