@@ -30,7 +30,7 @@ int main(int argc,char *argv[]){
       case '-':
         c = a - b;
         break;
-      case '*':
+      case 'x':
         c = a * b;
         break;
       case '%':
